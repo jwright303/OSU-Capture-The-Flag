@@ -16,6 +16,9 @@ To run the code type:
 
 ## Results
 Once the program finds the password whose hash matches the one supplied in the command line the password will be printed to the screen.
-In our case the password was: pineapple
+In our case the password was: pineapple.
 Now we can go back to the Hash Browns website we started with and enter the password pineapple.
-Entering in the password takes us to a new webpage with a link bouncing around the screen. Clicking on this reveals the flag: osu{p1n34ppl3_h45h_Br0wN5_4r3_g00D}
+Entering in the password takes us to a new webpage with a link bouncing around the screen. </br>
+At 
+
+Clicking on this reveals the flag: osu{p1n34ppl3_h45h_Br0wN5_4r3_g00D}
