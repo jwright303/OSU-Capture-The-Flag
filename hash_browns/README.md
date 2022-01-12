@@ -19,6 +19,8 @@ Once the program finds the password whose hash matches the one supplied in the c
 In our case the password was: pineapple.
 Now we can go back to the Hash Browns website we started with and enter the password pineapple.
 Entering in the password takes us to a new webpage with a link bouncing around the screen. </br>
-At 
 
-Clicking on this reveals the flag: osu{p1n34ppl3_h45h_Br0wN5_4r3_g00D}
+At this point we have a few options. The hardest might be to try and actually click on the link while it bounces around the screen. Alteratively we could look at the print_flag() code that the link corresponds to. This function shows us a ceasar cipher being used to hide the flag.</br> 
+We can either copy the javascript onto an online compiler and have it decrypt it for us, or we can decrypt it with an online ceasr cipher shifting it by 13 positions.
+
+Either of these options reveal the flag: osu{p1n34ppl3_h45h_Br0wN5_4r3_g00D}
