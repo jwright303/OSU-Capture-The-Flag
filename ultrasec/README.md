@@ -8,7 +8,7 @@ The software needed for this challenge is pwntools and ghidra. We will use ghidr
 
 ### Ghidra
 As mentioned, ghidra will be used to reverse engineer the executable. Oppening the supplied executable in ghidra we can find a few important functions. Starting with main we see it calls the check_password() function. The check_password fucntion is shown below. </br>
-![Screen Shot 2022-01-11 at 9 05 43 PM Small](https://user-images.githubusercontent.com/41707123/149067305-d62f4330-df53-4b83-9e7a-174dfe1cf160.jpeg)
+![Screen Shot 2022-01-11 at 9 05 43 PM Small](https://user-images.githubusercontent.com/41707123/149067305-d62f4330-df53-4b83-9e7a-174dfe1cf160.jpeg)</br>
 As mentioned before we first need to quickly respond with the nonce, then supply the password for the "ultrasecure tm vault".
 
 We can see by the screenshot that the variable holding the password is -0x, which is the signed version of 0xdeadb33f. Using all this we can create a pwntools script to automate the exploitation. 
